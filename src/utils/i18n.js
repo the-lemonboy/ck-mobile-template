@@ -1,7 +1,7 @@
 import { createI18n } from 'vue-i18n'
 import enUS from 'vant/es/locale/lang/en-US'
 import zhCN from 'vant/es/locale/lang/zh-CN'
-import messages from '@intlify/unplugin-vue-i18n/messages'
+// import messages from '@intlify/unplugin-vue-i18n/messages'
 import { Locale } from 'vant'
 
 /** 默认语言包名称 */
@@ -29,7 +29,7 @@ function getI18nLocale() {
 export const i18n = createI18n({
   locale: getI18nLocale(),
   legacy: false,
-  messages,
+  // messages,
 })
 
 /** 当前语言 */

@@ -3,8 +3,7 @@ import { createHead } from '@unhead/vue'
 import App from '@/App.vue'
 import router from '@/router'
 import pinia from '@/stores'
-import 'virtual:uno.css'
-import '@/styles/app.less'
+import '@/styles/app.scss'
 import { i18n } from '@/utils/i18n'
 
 // Vant 桌面端适配

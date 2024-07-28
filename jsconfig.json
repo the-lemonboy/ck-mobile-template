@@ -1,8 +1,22 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["src/*"]
+    },
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "moduleResolution": "Node"
   },
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.vue",
+    "tests/**/*.js",
+    "tests/**/*.jsx"
+  ]
 }
