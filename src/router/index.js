@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router/auto'
-import { routes } from 'vue-router/auto-routes'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from './routes' // 引入手动定义的路由配置
 
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -25,10 +25,8 @@ router.beforeEach((to, from, next) => {
 
   if (to.meta.level > from.meta.level)
     routeTransitionNameStore.setName('slide-fadein-left')
-
   else if (to.meta.level < from.meta.level)
     routeTransitionNameStore.setName('slide-fadein-right')
-
   else
     routeTransitionNameStore.setName('')
 

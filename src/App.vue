@@ -4,26 +4,27 @@ import useAppStore from '@/stores/modules/app'
 import useRouteCache from '@/stores/modules/routeCache'
 import useRouteTransitionNameStore from '@/stores/modules/routeTransitionName'
 import useAutoThemeSwitcher from '@/hooks/useAutoThemeSwitcher'
-useHead({
-  title: 'Vue3 Vant Mobile',
-  meta: [
-    {
-      name: 'description',
-      content: 'Vue + Vite H5 Starter Template'
-    },
-    {
-      name: 'theme-color',
-      content: () => (isDark.value ? '#00aba9' : '#ffffff')
-    }
-  ],
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/svg+xml',
-      href: () => (preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg')
-    }
-  ]
-})
+import { onMounted,computed } from 'vue'
+// useHead({
+//   title: 'Vue3 Vant Mobile',
+//   meta: [
+//     {
+//       name: 'description',
+//       content: 'Vue + Vite H5 Starter Template'
+//     },
+//     {
+//       name: 'theme-color',
+//       content: () => (isDark.value ? '#00aba9' : '#ffffff')
+//     }
+//   ],
+//   link: [
+//     {
+//       rel: 'icon',
+//       type: 'image/svg+xml',
+//       href: () => (preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg')
+//     }
+//   ]
+// })
 
 const appStore = useAppStore()
 const { mode } = storeToRefs(appStore)

@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
-import UnoCSS from 'unocss/vite'
+// import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
@@ -60,7 +60,7 @@ export function createVitePlugins() {
         },
         unheadVueComposablesImports,
       ],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'src/auto-imports.d.js',
       dirs: [
         'src/composables',
       ],
@@ -78,7 +78,7 @@ export function createVitePlugins() {
 
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
-    UnoCSS(),
+    // UnoCSS(),
 
     // https://github.com/vadxq/vite-plugin-vconsole
     createViteVConsole(),

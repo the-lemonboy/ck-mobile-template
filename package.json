@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^4.0.0",
     "@tanstack/vue-query": "^5.51.9",
     "@vueuse/core": "^10.11.0",
     "@vueuse/head": "^2.0.0",
@@ -21,6 +22,7 @@
     "pinia": "^2.1.7",
     "tailwindcss": "^3.4.7",
     "vant": "^4.9.3",
+    "vite-plugin-vue-devtools": "^7.3.7",
     "vue": "^3.4.29",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.3"
@@ -29,6 +31,7 @@
     "@rushstack/eslint-patch": "^1.8.0",
     "@unhead/vue": "^1.9.16",
     "@vant/touch-emulator": "^1.4.0",
+    "@vitejs/plugin-legacy": "^5.4.1",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/test-utils": "^2.4.6",
@@ -49,8 +52,14 @@
     "sass-loader": "^15.0.0",
     "stylelint": "^16.7.0",
     "terser": "^5.31.3",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.3",
     "unplugin-vue-router": "^0.10.1",
     "vite": "^5.3.1",
+    "vite-plugin-mock-dev-server": "^1.6.1",
+    "vite-plugin-pwa": "^0.20.1",
+    "vite-plugin-sitemap": "^0.7.1",
+    "vite-plugin-vconsole": "^2.1.1",
     "vitest": "^1.6.0"
   }
 }

@@ -7,16 +7,25 @@
       "@/*": ["src/*"]
     },
     "allowJs": true,
-    "checkJs": true,
-    "jsx": "preserve",
-    "experimentalDecorators": true,
-    "moduleResolution": "Node"
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.js",
     "src/**/*.jsx",
     "src/**/*.vue",
     "tests/**/*.js",
-    "tests/**/*.jsx"
+    "tests/**/*.jsx",
+    "src/components.d.js",
+    "src/auto-imports.d.js",
+    "src/typed-router.d.js"
   ]
 }
